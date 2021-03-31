@@ -43,7 +43,7 @@ public class CompanyService {
         try{
             company.setCorpName(companyDto.getCorpName());
             company.setDirectorName(companyDto.getDirectorName());
-            Address address = new Address(null, companyDto.getStreet(), companyDto.getHomeNumber());
+             Address address = new Address(null, companyDto.getStreet(), companyDto.getHomeNumber());
             addressRepository.save(address);
             company.setAddress(address);
             companyRepository.save(company);
