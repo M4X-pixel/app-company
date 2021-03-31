@@ -38,9 +38,9 @@ public class WorkerService {
     public ResponseEntity<?> addWorker(WorkerDto dto){
         Optional<Department> optionalDepartment = departmentRepository.findById(dto.getDepartmentId());
         if (!optionalDepartment.isPresent()) return ResponseEntity.status(409).body(new ApiResponse("department not found",false));
-        Address address = new Address(null, dto.getStreet(), dto.getHomeNumber());
-        addressRepository.save(address);
-        Worker worker = new Worker(null, dto.getName(), dto.getPhoneNumber(), address, optionalDepartment.get());
+        Optional<Address> optionalAddress = addressRepository.findById(dto.getAddressId());
+        if (!optionalAddress.isPresent()) return ResponseEntity.status(406).body( new ApiResponse("Address not found",false));
+        Worker worker = new Worker(null, dto.getName(), dto.getPhoneNumber(), optionalAddress.get(), optionalDepartment.get());
         workerRepository.save(worker);
         return ResponseEntity.ok(new ApiResponse("worker added",true));
     }
@@ -51,9 +51,9 @@ public class WorkerService {
         Optional<Department> optionalDepartment = departmentRepository.findById(dto.getDepartmentId());
         if (!optionalDepartment.isPresent()) return ResponseEntity.status(409).body(new ApiResponse("department not found",false));
         Worker worker = optionalWorker.get();
-        Address address = new Address(null, dto.getStreet(), dto.getHomeNumber());
-        addressRepository.save(address);
-        worker.setAddress(address);
+        Optional<Address> optionalAddress = addressRepository.findById(dto.getAddressId());
+        if (!optionalAddress.isPresent()) return ResponseEntity.status(409).body( new ApiResponse("Address not found",false));
+        worker.setAddress(optionalAddress.get());
         worker.setDepartment(optionalDepartment.get());
         worker.setPhoneNumber(dto.getPhoneNumber());
         worker.setName(dto.getName());

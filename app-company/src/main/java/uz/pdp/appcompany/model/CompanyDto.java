@@ -17,10 +17,6 @@ public class CompanyDto {
     @NotNull(message = "director name cant be empty")
     private String directorName;
 
-    @NotNull(message = "address field can not be empty")
-    private String street;
-
-    @NotNull(message = "address field can not be empty")
-    private Integer homeNumber;
+   private Integer addressId;
 
 }

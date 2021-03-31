@@ -43,9 +43,9 @@ public class CompanyService {
         try{
             company.setCorpName(companyDto.getCorpName());
             company.setDirectorName(companyDto.getDirectorName());
-             Address address = new Address(null, companyDto.getStreet(), companyDto.getHomeNumber());
-            addressRepository.save(address);
-            company.setAddress(address);
+            Optional<Address> optionalAddress = addressRepository.findById(companyDto.getAddressId());
+            if (!optionalAddress.isPresent()) return new ApiResponse("Address not found",false);
+            company.setAddress(optionalAddress.get());
             companyRepository.save(company);
             apiResponse.setSuccess(true);
             apiResponse.setMessage("Company added");
@@ -62,9 +62,9 @@ public class CompanyService {
         Company company = optionalCompany.get();
         company.setCorpName(companyDto.getCorpName());
         company.setDirectorName(companyDto.getDirectorName());
-        Address address = new Address(null, companyDto.getStreet(), companyDto.getHomeNumber());
-        addressRepository.save(address);
-        company.setAddress(address);
+        Optional<Address> optionalAddress = addressRepository.findById(companyDto.getAddressId());
+        if (!optionalAddress.isPresent()) return new ApiResponse("Address not found",false);
+        company.setAddress(optionalAddress.get());
         companyRepository.save(company);
         apiResponse.setSuccess(true);
         apiResponse.setMessage("Company edited");
