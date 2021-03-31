@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9e63b7ea-fab3-4d78-8d96-86d21ef9c557" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/src/main/java/uz/pdp/appcodingbat/AppCodingbatApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/src/main/java/uz/pdp/appcodingbat/entity/Prog_lang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app-codingbat/src/test/java/uz/pdp/appcodingbat/AppCodingbatApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qHZKl32LigryjFyzCP43SK0WLL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app-company" />
+  </component>
+  <component name="RunManager">
+    <configuration name="AppRestFullServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="app-rest-full-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="uz.pdp.apprestfullservice.AppRestFullServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e63b7ea-fab3-4d78-8d96-86d21ef9c557" name="Default Changelist" comment="" />
+      <created>1616738416088</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616738416088</updated>
+      <workItem from="1616738417503" duration="4584000" />
+      <workItem from="1617083594592" duration="136000" />
+      <workItem from="1617086993504" duration="132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
